@@ -47,3 +47,4 @@ Kibana will be accessible at http://127.0.01:5601.
 - https://github.com/logstash-plugins/logstash-patterns-core/blob/master/patterns/httpd
 - https://www.elastic.co/guide/en/logstash/current/config-examples.html
 - https://www.digitalocean.com/community/tutorials/how-to-install-elasticsearch-logstash-and-kibana-elk-stack-on-ubuntu-14-04
+- https://www.nginx.com/blog/using-nginx-logging-for-application-performance-monitoring/
