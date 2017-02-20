@@ -1,0 +1,7 @@
+filebeat.prospectors:
+- input_type: log
+  paths:
+    #- /log/logstash-tutorial.log
+    - /log/nginx/access.log
+output.logstash:
+  hosts: ["localhost:5043"]

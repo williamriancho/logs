@@ -1,0 +1,5 @@
+NGUSERNAME [a-zA-Z\.\@\-\+_%]+
+NGUSER %{NGUSERNAME}
+NGINXLOG %{IPORHOST:clientip} %{NGUSER:ident} %{NGUSER:auth} \[%{HTTPDATE:timestamp}\] \"(?:%{WORD:verb} %{NOTSPACE:request}(?: HTTP/%{NUMBER:httpversion})?|-)\"%{NUMBER:response} (?:%{NUMBER:bytes}|-) %{NOTSPACE:querystring} (?:"(?:%{URI:referrer}|-)"|%{QS:referrer})%{QS:agent}
+
+APM timestamp=\"%{HTTPDATE:timestamp}\" client=%{IPORHOST:clientip} request=\"(?:%{WORD:verb} %{NOTSPACE:request}(?: HTTP/%{NUMBER:httpversion})?|-)\" bytes_sent=%{NUMBER:bytes} referer=%{QS:referrer} user_agent=%{QS:agent} request_time=%{NUMBER:duration}
